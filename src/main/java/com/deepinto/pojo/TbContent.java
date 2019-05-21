@@ -12,7 +12,6 @@ public class TbContent {
     private String subTitle;
 
     private String titleDesc;
-
     private String url;
 
     private String pic;

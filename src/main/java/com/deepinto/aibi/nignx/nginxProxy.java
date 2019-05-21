@@ -4,7 +4,7 @@ package com.deepinto.aibi.nignx;
  * @author Ming
  * @描述 Nginx的反向代理 负载均衡
  */
-public class NginxProxy {
+public class nginxProxy {
     /**
      *  @1 配置tomcat
      */

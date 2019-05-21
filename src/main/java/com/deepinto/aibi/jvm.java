@@ -3,24 +3,24 @@ package com.deepinto.aibi;
 public class jvm {
 
     /**
-     * @1 Java虚拟机运行时数据区域划分
+     * @1.Java虚拟机运行时数据区域划分
      */
-    /*1. 堆 heap
+    /* 1.堆 heap
      *
-     *2. 栈 Stack
+     * 2.栈 Stack
      *
-     *3. 本地方法栈(Native stack)
+     * 3.本地方法栈(Native stack)
      *
-     *4. 方法区(Method Area)
+     * 4.方法区(Method Area)
      *
-     *5. 程序计数器(ProgramCountRegister)
+     * 5.程序计数器(ProgramCountRegister)
      */
 
     /**
-     * @2 堆（Heap）
+     * @2.堆（Heap）
      */
     /*
-     *对于大多数应用来说,Java Heap是Java虚拟机管理的内存的最大一块,这块区域随着
+     * 对于大多数应用来说,Java Heap是Java虚拟机管理的内存的最大一块,这块区域随着
      *
      * 虚拟机的启动而创建,在实际的运用中,我们创建的对象和数组就是存放在堆里面
      *
@@ -41,7 +41,7 @@ public class jvm {
      * */
 
     /**
-     * @Stack 栈区
+     * @3.Stack栈区
      * */
     /* 相对于Java Heap来讲,Java Stack是线程私有的,它的生命周期与线程相同
      *
@@ -57,7 +57,7 @@ public class jvm {
      * */
 
     /**
-     * @4 Native Stack 本地方法栈
+     * @4.NativeStack本地方法栈
      */
     /*本地方法栈(Native Stack)与Java虚拟机栈(Java Stack)所发挥的作用非常相似
      *
@@ -67,7 +67,7 @@ public class jvm {
      */
 
     /**
-     * @5 方法区
+     * @5.方法区
      */
     /* 方法区与堆区一样 是各个线程共享的内存区域,它用于存储虚拟机加载的
      *

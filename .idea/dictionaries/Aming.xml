@@ -2,10 +2,34 @@
   <dictionary name="Aming">
     <words>
       <w>alibaba</w>
+      <w>appendonly</w>
+      <w>daemonize</w>
       <w>deepinto</w>
+      <w>devel</w>
       <w>dubbo</w>
+      <w>emerg</w>
+      <w>fastcgi</w>
+      <w>firewalld</w>
+      <w>iptables</w>
       <w>jedis</w>
+      <w>keepalive</w>
+      <w>nginx</w>
+      <w>ningx</w>
+      <w>sadfsa</w>
+      <w>scgi</w>
+      <w>sendfile</w>
+      <w>shoutdown</w>
+      <w>sina</w>
+      <w>sohu</w>
+      <w>solrhome</w>
       <w>sqlsessionfactory</w>
+      <w>sysoev</w>
+      <w>systemctl</w>
+      <w>trib</w>
+      <w>uwsgi</w>
+      <w>webapps</w>
+      <w>zlib</w>
+      <w>zxvf</w>
     </words>
   </dictionary>
 </component>
