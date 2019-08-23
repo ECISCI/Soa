@@ -33,9 +33,9 @@ public class nginxInstall {
     /**
      * @3.nginx安装
      *
-     * @注意.nginx是C语言编写的linux版只提供源代码, 所以安装nginx需要编译
+     * @注意.nginx是C语言编写的linux版只提供源代码,所以安装nginx需要编译
      *
-     * @扩展.nginx不像redis一样可以直接执行makecmd, 需要预先执行configcmd
+     * @扩展.nginx不像redis一样可以直接执行make,需要预先执行config
      */
     /* 1.将nginx压缩包上传到linux服务器 （最好不要上传到/usr/local,后面会做解释）（当然不是必要的其实在哪都行,但最好区分）
      *

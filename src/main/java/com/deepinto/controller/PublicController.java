@@ -12,82 +12,39 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PublicController {
 
     /**
+     * 登录页
+     *
+     * @return login
+     */
+    @RequestMapping("/login")
+    public String index() {
+        L.i("请求访问:login");
+
+        return "login";
+    }
+
+    /**
      * 首页
      *
-     * @return index.jsp
+     * @return main
      */
-    @RequestMapping("/index")
-    public String index() {
+    @RequestMapping("/main")
+    public String main() {
+        L.i("请求访问:main");
 
-        L.i("请求访问:index");
-
-        return "index";
+        return "main";
     }
 
     /**
-     * 添加商品
+     * welcome
      *
-     * @return item-add.jsp
+     * @return welcome
      */
-    @RequestMapping("/item-add")
-    public String itemAdd() {
+    @RequestMapping("/welcome")
+    public String welcome() {
+        L.i("请求访问:welcome");
 
-        L.i("请求访问:itemAdd");
-
-        return "item-add";
+        return "welcome";
     }
-
-    /**
-     * 查询商品
-     *
-     * @return item-list.jsp
-     */
-    @RequestMapping("/item-list")
-    public String itemList() {
-
-        L.i("请求访问:itemList");
-
-        return "item-list";
-    }
-
-    /**
-     * 商品规格
-     *
-     * @return item-param-list.jsp
-     */
-    @RequestMapping("/item-param-list")
-    public String itemParamList() {
-
-        L.i("请求访问:itemParamList");
-
-        return "item-param-list";
-    }
-
-    /**
-     * 内容管理
-     *
-     * @return item-param-list.jsp
-     */
-    @RequestMapping("/content-category")
-    public String contentCategory() {
-
-        L.i("请求访问:contentCategory");
-
-        return "content-category";
-    }
-
-    /**
-     * solr索引库
-     *
-     * @return index-item.jsp
-     */
-    @RequestMapping("/index-item")
-    public String indexItem() {
-
-        L.i("请求访问:contentCategory");
-
-        return "index-item";
-    }
-
 
 }

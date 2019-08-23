@@ -29,6 +29,8 @@
             </set>
         </property>
     </bean>
+
+
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <!-- 设定默认编码 -->
         <property name="defaultEncoding" value="UTF-8"></property>
@@ -51,8 +53,8 @@
     <!-- 引用dubbo服务 -->
     <!-- 引用dubbo服务 -->
     <dubbo:application name="ms"/>
-    <dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>
-    <dubbo:reference interface="com.deepinto.service.ItemService" id="itemService" />
-    <dubbo:reference interface="com.deepinto.service.ItemCatService" id="itemCatService" />
+    <!--<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>-->
+    <!--<dubbo:reference interface="com.deepinto.service.ItemService" id="itemService" />-->
+    <!--<dubbo:reference interface="com.deepinto.service.ItemCatService" id="itemCatService" />-->
 
 </beans>

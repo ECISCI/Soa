@@ -1,40 +1,57 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%--
+  Created by IntelliJ IDEA.
+  User: Aming
+  Date: 2019/5/22
+  Time: 17:28
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>管理员登录</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>熊猫商城</title>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/login.css"/>
 </head>
-<body style="background-color: #F3F3F3">
-    <div class="easyui-dialog" title="管理员登录" data-options="closable:false,draggable:false" style="width:400px;height:300px;padding:10px;">
-       	<div style="margin-left: 50px;margin-top: 50px;">
-       		<div style="margin-bottom:20px;">
-	            <div>
-	            	用户名: <input name="username" class="easyui-textbox" data-options="required:true" style="width:200px;height:32px" value="admin"/>
-	            </div>
-	        </div>
-	        <div style="margin-bottom:20px">
-	            <div>
-	            	密&nbsp;&nbsp;码: <input name="password" class="easyui-textbox" type="password" style="width:200px;height:32px" data-options="" value="admin"/>
-	            </div>
-	        </div>
-	        <div>
-	            <a id="login" class="easyui-linkbutton" iconCls="icon-ok" style="width:100px;height:32px;margin-left: 50px">登录</a>
-	        </div>
-       	</div>
+
+<body>
+<div class="m-login-bg">
+    <div class="m-login">
+        <h3>熊猫商城后台管理系统登录</h3>
+        <div class="m-login-warp">
+            <form class="layui-form">
+                <div class="layui-form-item">
+                    <input type="text" name="username" required lay-verify="required" placeholder="用户名"
+                           autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <input type="text" name="password" required lay-verify="required" placeholder="密码"
+                           autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item m-login-btn">
+                    <div class="layui-inline">
+                        <button class="layui-btn layui-btn-normal" lay-submit lay-filter="login">登录</button>
+                    </div>
+                    <div class="layui-inline">
+                        <button type="reset" class="layui-btn layui-btn-primary">取消</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <p class="copyright">Copyright 2019 Ming</p>
     </div>
-    
-    <script type="text/javascript">
-    	$("#login").click(function(){
-    		var username = $("[name=username]").val();
-    		var password = $("[name=password]").val();
-    		
-    		if(username!="admin" || password!="admin"){
-    			$.messager.alert('错误',"用户名密码不正确！");
-    			return ;
-    		}
-    		window.location.href="/rest/page/index";
-    	});
-    </script>
+</div>
+
+<script src="../../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/js/jquery.1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/js/jquery.md5.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/ms/login.js" type="text/javascript" charset="utf-8"></script>
+
 </body>
+
 </html>
